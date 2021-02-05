@@ -12,5 +12,6 @@ class User < ApplicationRecord
     #     validates_presence_of :email
     # end
         
-    has_secure_password
+     has_secure_password
+    end
 end
