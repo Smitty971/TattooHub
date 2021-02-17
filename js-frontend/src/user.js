@@ -5,3 +5,4 @@ class User {
         this.password = this.password
     }
 }
+

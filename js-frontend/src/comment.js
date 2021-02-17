@@ -5,3 +5,6 @@ class Comment {
         this.user_id = user_id
     }
 }
+
+
+////store which post comment instance belongs to?
