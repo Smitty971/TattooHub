@@ -1,10 +1,12 @@
 class App {
     Posts = []
+    comments = []
     url = ""
 
 
     getPosts() {
         // make a fetch request to /posts
+        //populate the posts and comments with the returned data
         //call renderPosts
 
     }
