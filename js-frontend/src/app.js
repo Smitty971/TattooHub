@@ -1,14 +1,14 @@
 class App {
-    Posts = []
+    posts = []
     comments = []
     url = "http://localhost:3000"
 
 
     getPosts() {
         // make a fetch request to /posts
-        console.log('something')
         fetch(this.url + '/posts')
-        .then(resp => console.log(resp))
+        .then(resp => resp.json())
+        .then(data => console.log(data))
         //populate the posts and comments with the returned data
         //call renderPosts
         .catch(err => alert(err))
