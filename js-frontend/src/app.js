@@ -8,7 +8,11 @@ class App {
         // make a fetch request to /posts
         fetch(this.url + '/posts')
         .then(resp => resp.json())
-        .then(data => console.log(data))
+        .then(data => {
+            data.forEach(post => {
+                new Post(post)
+            });
+        }
         //populate the posts and comments with the returned data
         //call renderPosts
         .catch(err => alert(err))
