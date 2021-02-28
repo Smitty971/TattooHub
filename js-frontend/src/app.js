@@ -1,5 +1,5 @@
 class App {
-    posts = []
+    static posts = []
     comments = []
     url = "http://localhost:3000"
 
@@ -10,9 +10,9 @@ class App {
         .then(resp => resp.json())
         .then(data => {
             data.forEach(post => {
-                new Post(post)
+                new Post(post.description, post.artist)
             });
-        }
+        })
         //populate the posts and comments with the returned data
         //call renderPosts
         .catch(err => alert(err))
