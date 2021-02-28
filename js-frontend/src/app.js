@@ -10,7 +10,7 @@ class App {
         .then(resp => resp.json())
         .then(data => {
             data.forEach(post => {
-                new Post(post.description, post.artist)
+                new Post(post)
             });
         })
         //populate the posts and comments with the returned data
