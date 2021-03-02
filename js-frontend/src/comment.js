@@ -1,8 +1,9 @@
 class Comment {
-    constructor() {
+    constructor(description, username, user, post) {
         this.description = description
         this.username = username
-        this.user_id = user_id
+        this.user = user
+        this.post = post
     }
 }
 

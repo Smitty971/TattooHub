@@ -1,8 +1,8 @@
 class Post {
-    constructor() {
+    constructor(description, artist, user) {
         this.description = description
         this.artist = artist
-        this.user_id = user_id
+        this.user = user
         App.posts.push(this);
     }
 }

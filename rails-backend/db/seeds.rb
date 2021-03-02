@@ -7,7 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-Post.create(artist: "jim")
-Post.create(artist: "jan")
-Post.create(artist: "kimmmmm")
-Post.create(artist: "yekkkka")
+Post.create(description: "darth maul", artist: "jim")
+Post.create()
