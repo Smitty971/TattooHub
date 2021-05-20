@@ -21,7 +21,11 @@ class App {
 
     renderPosts() {
         //create DOm nodes insert data into them to render in the dom
-
-    }
-
+            AppContainer.posts.forEach.createElement('ul')
+                const li = document.createElement("li")
+                li.innerText = activity.name;
+                ul.appendChild(li);
+        })
+        document.body.appendChild(ul)
+    };
 }
