@@ -21,9 +21,9 @@ class App {
 
     renderPosts() {
         //create DOm nodes insert data into them to render in the dom
-            PostsContainer.posts.forEach(posts => {
+        PostContainer.posts.forEach(posts => {
                 const li = document.createElement("li")
-                li.innerText = activity.name;
+                li.innerText = post.description;
                 ul.appendChild(li);
         })
         document.body.appendChild(ul)
